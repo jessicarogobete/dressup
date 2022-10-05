@@ -16,8 +16,8 @@ public class Items: ScriptableObject {
 
     public SpriteRenderer spriteRenderer;
     public Sprite newSprite;
+    public Transform transform;
 
-    [SerializeField]
     public Sprite[] items;
 
     public Items(bool active, Sprite[] arrayOfItems){

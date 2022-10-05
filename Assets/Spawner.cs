@@ -34,4 +34,10 @@ public class Spawner : MonoBehaviour
             instanceNumber++;
         }
     }
+
+    //maybe make a method here to change the transform to a different child object to activate
+
+    public void onButton(){
+
+    }
 }

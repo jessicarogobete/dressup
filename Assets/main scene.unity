@@ -1066,7 +1066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityToSpawn: {fileID: 3601526597109438530, guid: c87e404fdfba1ac43b435846be44f745, type: 3}
-  spawnManagerValues: {fileID: 0}
+  spawnManagerValues: {fileID: 11400000, guid: 10c6b444cac31d847a08aa498c33c27c, type: 2}
 --- !u!1 &1468820263 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8333116817251125519, guid: 8eb680464e169d045b8cbc218f73ee9d, type: 3}
@@ -1816,9 +1816,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 626612443}
-        m_TargetAssemblyTypeName: View, Assembly-CSharp
-        m_MethodName: onLeftTop
+      - m_Target: {fileID: 1334906344}
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
+        m_MethodName: onButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
