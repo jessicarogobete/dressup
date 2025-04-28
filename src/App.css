@@ -8,13 +8,21 @@
 
 .changeroom {
   display: flex;
-  max-height: vh;
+  max-height: 100vh;
   flex-direction: row;
+  margin: auto;
+
+
+  h1 {
+    position: fixed;
+  }
 }
 
 .main_area {
   display: flex;
   flex-direction: row;
+  align-content: center;
+  margin: 50px 100px;
 }
 
 .partygirl {
