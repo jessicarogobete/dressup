@@ -1,9 +1,9 @@
 #root {
-  max-width: 1280px;
-  max-height: vh;
+  max-height: 100vh;
+  min-width: 100vw;
   margin: 0 auto;
-  padding: 2rem;
   display: flex;
+  background-color: pink;
 }
 
 .changeroom {
@@ -17,7 +17,9 @@
   flex-direction: row;
 }
 
-.partygirl {}
+.partygirl {
+  max-height: 100vh;
+}
 
 .logo {
   height: 6em;

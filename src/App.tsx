@@ -1,5 +1,6 @@
 import rightArrow from './assets/arrow-right.svg'
 import partygirl from './assets/Partygirlsmall.png'
+import ClothingButtons from './Components/clothing-buttons'
 import './App.css'
 
 function App() {
@@ -9,9 +10,7 @@ function App() {
       <h1>Dress Up Party Girl!</h1>
       <div className='main_area'>
         <img className='partygirl' src={partygirl} />
-        <button>
-          <img src={rightArrow} />
-        </button>
+        <ClothingButtons />
       </div>
     </div>
   )
