@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import viteLogo from '/vite.svg'
 import rightArrow from './assets/arrow-right.svg'
-import partygirl from './assets/partygirl.svg'
+import partygirl from './assets/Partygirlsmall.png'
 import './App.css'
 
 function App() {
