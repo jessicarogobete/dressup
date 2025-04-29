@@ -4,12 +4,9 @@ import { useState } from 'react'
 import './App.css'
 import ClothingType from './Components/clothing-type';
 
-export enum ClothingTypes {
-  'hair', 'tops', 'bottoms', 'shoes'
-}
+
 
 //CONSTANTS
-
 const shirts = ['', pink_button_shirt]
 
 function App() {

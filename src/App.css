@@ -23,11 +23,28 @@
   flex-direction: row;
   align-content: center;
   margin: 50px 100px;
+  width: 80vw;
+  justify-content: center;
 }
 
 .partygirl {
   max-height: 100vh;
 }
+
+.ButtonsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 30px;
+  margin: 100px 50px;
+}
+
+
+
+
+
+
 
 .logo {
   height: 6em;
