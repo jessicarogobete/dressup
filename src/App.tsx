@@ -1,7 +1,16 @@
 import partygirl from './assets/Partygirlsmall.png'
-import ClothingButtons from './Components/clothing-buttons'
+import pink_button_shirt from './assets/pink_button_shirt.png'
 import { useState } from 'react'
 import './App.css'
+import ClothingType from './Components/clothing-type';
+
+export enum ClothingTypes {
+  'hair', 'tops', 'bottoms', 'shoes'
+}
+
+//CONSTANTS
+
+const shirts = ['', pink_button_shirt]
 
 function App() {
   const [state, setState] = useState('');
@@ -13,7 +22,7 @@ function App() {
       <div className='main_area'>
         <img className='partygirl' src={partygirl} />
         {
-          (state != '') ? <></> :
+          (state != '') ? <ClothingType options={shirts}></ClothingType> :
             < div className='ButtonsContainer'>
               {buttons}
             </div>
