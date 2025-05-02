@@ -1,4 +1,6 @@
 import { useState } from "react";
+import './clothing-type.css'
+
 
 // stores clothing type options and renders which is currently selected
 // type should be passed in to styles to know where to render the arrow buttons
@@ -25,11 +27,11 @@ export default function ClothingType(props: { options: string[] }) {
 
 
     return (
-        <>
-            <button onClick={() => goBack()} data-testid='back-button'>back</button>
-            <img src={props.options[currentOption]}></img>
-            <button onClick={() => goForward()} data-testid='forward-button'>forward</button>
-        </>
+        <div className='ClothingContainer'>
+            <button className='arrow-button' onClick={() => goBack()} data-testid='back-button'>back</button>
+            <img className='clothing-item' src={props.options[currentOption]}></img>
+            <button className='arrow-button' onClick={() => goForward()} data-testid='forward-button'>forward</button>
+        </div>
 
     )
 }

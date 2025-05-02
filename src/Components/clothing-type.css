@@ -1,0 +1,18 @@
+.ClothingContainer {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.clothing-item {
+    position: absolute;
+}
+
+.arrow-button {
+    height: 100px;
+    align-items: center;
+}

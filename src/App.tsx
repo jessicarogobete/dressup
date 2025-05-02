@@ -17,13 +17,15 @@ function App() {
     <div className='changeroom'>
       <h1>Dress Up Party Girl!</h1>
       <div className='main_area'>
-        <img className='partygirl' src={partygirl} />
         {
+
           (state != '') ? <ClothingType options={shirts}></ClothingType> :
-            < div className='ButtonsContainer'>
+            <div className='ButtonsContainer'>
               {buttons}
             </div>
         }
+        <img className='partygirl' src={partygirl} />
+
 
       </div>
     </div >
