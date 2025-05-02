@@ -29,7 +29,9 @@
   height: 100vh;
 }
 
-.partygirl {
+.partygirl {}
+
+.partygirl-base {
   max-height: 100vh;
 }
 

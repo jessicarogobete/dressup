@@ -12,22 +12,27 @@ const shirts = [placeholder, pink_button_shirt]
 
 function App() {
   const [state, setState] = useState('');
+  let isStart = state === '';
   const clothingTypes = ['hair', 'tops', 'bottoms', 'shoes'];
-  const buttons = clothingTypes.map(item => <button onClick={() => setState(item)}>{item}</button>)
+  const buttons = clothingTypes.map(item => <button onClick={() => setState(item)}>{item}</button>);
+
   return (
     <div className='changeroom'>
       <h1>Dress Up Party Girl!</h1>
       <div className='main_area'>
-        {
-          (state != '')
-            ?
-            <ClothingType options={shirts}></ClothingType>
-            :
+
+        {isStart ?
+          (
             <div className='ButtonsContainer'>
               {buttons}
             </div>
+          ) : <button className='exit-button' onClick={() => setState('')}>exit</button>
         }
-        <img className='partygirl' src={partygirl} />
+        <div className='partygirl'>
+          <ClothingType options={shirts} state={state}></ClothingType>
+          <img className='partygirl-base' src={partygirl} />
+        </div>
+
 
 
       </div>
