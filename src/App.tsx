@@ -1,5 +1,6 @@
 import partygirl from './assets/Partygirlsmall.png'
 import pink_button_shirt from './assets/pink_button_shirt.png'
+import placeholder from './assets/Placeholder.png';
 import { useState } from 'react'
 import './App.css'
 import ClothingType from './Components/clothing-type';
@@ -7,7 +8,7 @@ import ClothingType from './Components/clothing-type';
 
 
 //CONSTANTS
-const shirts = ['', pink_button_shirt]
+const shirts = [placeholder, pink_button_shirt]
 
 function App() {
   const [state, setState] = useState('');
@@ -18,8 +19,10 @@ function App() {
       <h1>Dress Up Party Girl!</h1>
       <div className='main_area'>
         {
-
-          (state != '') ? <ClothingType options={shirts}></ClothingType> :
+          (state != '')
+            ?
+            <ClothingType options={shirts}></ClothingType>
+            :
             <div className='ButtonsContainer'>
               {buttons}
             </div>

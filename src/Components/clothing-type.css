@@ -1,4 +1,4 @@
-.ClothingContainer {
+.ButtonContainer {
     position: absolute;
     height: inherit;
     width: inherit;
@@ -10,6 +10,7 @@
 
 .clothing-item {
     position: absolute;
+    max-height: 100vh;
 }
 
 .arrow-button {

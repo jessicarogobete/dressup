@@ -27,11 +27,14 @@ export default function ClothingType(props: { options: string[] }) {
 
 
     return (
-        <div className='ClothingContainer'>
-            <button className='arrow-button' onClick={() => goBack()} data-testid='back-button'>back</button>
+        <>
             <img className='clothing-item' src={props.options[currentOption]}></img>
-            <button className='arrow-button' onClick={() => goForward()} data-testid='forward-button'>forward</button>
-        </div>
+            <div className='ButtonContainer'>
+                <button className='arrow-button' onClick={() => goBack()} data-testid='back-button'>back</button>
+                <button className='arrow-button' onClick={() => goForward()} data-testid='forward-button'>forward</button>
+            </div>
+
+        </>
 
     )
 }
