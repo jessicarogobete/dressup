@@ -7,12 +7,8 @@
     justify-content: space-between;
     align-items: center;
     position: absolute;
+    top: 50vh;
     z-index: 1;
-}
-
-.clothing-item {
-    position: absolute;
-    max-height: 100vh;
 }
 
 .arrow-button {

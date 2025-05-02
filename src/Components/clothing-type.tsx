@@ -1,5 +1,6 @@
 import { useState } from "react";
 import './clothing-type.css'
+import '../App.css'
 
 
 // stores clothing type options and renders which is currently selected
@@ -28,7 +29,7 @@ export default function ClothingType(props: { options: string[], state: string }
 
     return (
         <>
-            <img className='clothing-item' src={props.options[currentOption]}></img>
+            <img className='partygirl-base' src={props.options[currentOption]}></img>
             {showButtons ?
                 (<div className='ButtonContainer'>
                     <button className='arrow-button' onClick={() => goBack()} data-testid='back-button'>back</button>
