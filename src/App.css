@@ -29,10 +29,14 @@
   height: 100vh;
 }
 
-.partygirl {}
+.partygirl {
+  max-height: 100vh;
+  width: inherit;
+}
 
 .partygirl-base {
-  max-height: 100vh;
+  max-height: inherit;
+  position: absolute
 }
 
 .ButtonsContainer {
@@ -43,6 +47,13 @@
   column-gap: 30px;
   margin: 100px 50px;
   justify-self: flex-end;
+}
+
+.exit-button {
+  height: 100px;
+  position: absolute;
+  right: 0;
+  top: 50px;
 }
 
 

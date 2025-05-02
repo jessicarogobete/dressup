@@ -29,8 +29,9 @@ function App() {
           ) : <button className='exit-button' onClick={() => setState('')}>exit</button>
         }
         <div className='partygirl'>
-          <ClothingType options={shirts} state={state}></ClothingType>
           <img className='partygirl-base' src={partygirl} />
+          <ClothingType options={shirts} state={state}></ClothingType>
+
         </div>
 
 

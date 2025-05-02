@@ -24,8 +24,6 @@ export default function ClothingType(props: { options: string[], state: string }
             setCurrentOption(0);
         }
     }
-
-    console.log('state:', props.state)
     const showButtons = props.state !== '';
 
     return (

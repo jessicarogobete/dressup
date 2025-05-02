@@ -1,5 +1,4 @@
 .ButtonContainer {
-    position: absolute;
     height: inherit;
     width: inherit;
     max-height: 100vh;
@@ -7,6 +6,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    z-index: 1;
 }
 
 .clothing-item {
