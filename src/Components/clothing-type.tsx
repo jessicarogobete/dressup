@@ -2,6 +2,7 @@ import { useState } from "react";
 import './clothing-type.css'
 import '../App.css'
 import { CLOTHING_TYPES } from "../App";
+import forward_arrow from "../assets/Arrow pink.png";
 
 
 // stores clothing type options and renders which is currently selected
@@ -28,15 +29,13 @@ export default function ClothingType(props: { options: string[], state: CLOTHING
     }
     const showButtons = props.state == props.type;
 
-
-    //TODO: MAKE THIS A BUTTON CLASS AND REMOVE CLOTHING IMAGE FROM HERE
     return (
         <>
             <img className='partygirl-base' src={props.options[currentOption]}></img>
             {showButtons ?
                 (<div className='ButtonContainer'>
-                    <button className='arrow-button' onClick={() => goBack()} data-testid='back-button'>back</button>
-                    <button className='arrow-button' onClick={() => goForward()} data-testid='forward-button'>forward</button>
+                    <img src={forward_arrow} className='arrow-button-back' onClick={() => goBack()} data-testid='back-button' />
+                    <img src={forward_arrow} className='arrow-button-forward' onClick={() => goForward()} data-testid='forward-button' />
                 </div>) : <></>
             }
 

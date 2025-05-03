@@ -11,7 +11,13 @@
     z-index: 1;
 }
 
-.arrow-button {
+.arrow-button-forward {
     height: 100px;
     align-items: center;
+}
+
+.arrow-button-back {
+    height: 100px;
+    align-items: center;
+    transform: rotate(180deg);
 }
