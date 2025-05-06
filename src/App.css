@@ -15,6 +15,7 @@
 
   h1 {
     position: fixed;
+    color: deeppink;
   }
 }
 
@@ -31,7 +32,7 @@
 
 .partygirl {
   max-height: 100vh;
-  width: inherit;
+  width: 503px;
 }
 
 .partygirl-base {

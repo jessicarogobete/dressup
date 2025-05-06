@@ -106,7 +106,7 @@ function App() {
             <div className='ButtonsContainer'>
               {buttons}
             </div>
-          ) : <button className='exit-button' onClick={() => setState(CLOTHING_TYPES.NONE)}>exit</button>
+          ) : <button className='exit-button' onClick={() => setState(CLOTHING_TYPES.NONE)}>back</button>
         }
         <div className='partygirl'>
           <img className='partygirl-base' src={partygirl} />
@@ -118,8 +118,6 @@ function App() {
           <ClothingType options={layers} state={state} type={CLOTHING_TYPES.LAYER} />
 
         </div>
-
-
 
       </div>
     </div >
