@@ -41,12 +41,14 @@
 
 .ButtonsContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  width: min-content;
+  height: min-content;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   row-gap: 30px;
   column-gap: 30px;
-  margin: 100px 50px;
-  justify-self: flex-end;
+  padding: 0px 50px;
+  align-self: center;
 }
 
 .exit-button {
