@@ -1,8 +1,8 @@
 import { useState } from "react";
 import './clothing-type.css'
-import '../App.css'
-import { CLOTHING_TYPES } from "../App";
+import '../App.css';
 import forward_arrow from "../assets/Arrow pink.png";
+import { CLOTHING_TYPES } from "../constants";
 
 
 // stores clothing type options and renders which is currently selected

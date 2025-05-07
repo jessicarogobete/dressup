@@ -37,28 +37,7 @@ import Button_Socks from './assets/Button socks.png';
 import { useState } from 'react'
 import './App.css'
 import ClothingType from './Components/clothing-type';
-
-export enum CLOTHING_TYPES {
-  HAIR,
-  TOP,
-  LAYER,
-  BOTTOM,
-  SOCK,
-  SHOES,
-  NONE
-}
-
-const ClothingTypes = ["hair", "tops", "bottoms", "shoes", "socks", "layers"];
-
-
-const ClothingTypesMap = new Map<string, CLOTHING_TYPES>([
-  ["hair", CLOTHING_TYPES.HAIR],
-  ["tops", CLOTHING_TYPES.TOP],
-  ["layers", CLOTHING_TYPES.LAYER],
-  ["bottoms", CLOTHING_TYPES.BOTTOM],
-  ["socks", CLOTHING_TYPES.SOCK],
-  ["shoes", CLOTHING_TYPES.SHOES]
-]);
+import { CLOTHING_TYPES, ClothingTypes, ClothingTypesMap } from './constants';
 
 //CONSTANTS
 const shirts = [placeholder, pink_button_shirt, graphic_pink_tee, fairy_sleeves, white_tee, black_tee, brown_tank, frilly_blouse];
@@ -89,11 +68,9 @@ function App() {
   const [state, setState] = useState(CLOTHING_TYPES.NONE);
   const isStart = state === CLOTHING_TYPES.NONE;
   const buttons = ClothingTypes.map(item => <img src={
-    getImage(item)
-
-  } onClick={() => setState(ClothingTypesMap.get(item) ?? CLOTHING_TYPES.NONE)
-  }></img >);
-
+    getImage(item)} onClick={() => setState(ClothingTypesMap.get(item) ?? CLOTHING_TYPES.NONE)
+    } data-testid={item}
+  />);
 
 
   return (
