@@ -6,7 +6,18 @@ import white_tee from './assets/Plain white tee.png';
 import brown_tank from './assets/Top tank brown.png';
 import frilly_blouse from './assets/Top frilly blouse.png';
 
+import t_shirt_dress from './assets/Dress t shirt.png';
+import pink_tank_top from './assets/Top pink tank.png';
+import blue_tank_top from './assets/Top tank blue.png';
+import uw_crewneck from './assets/Uw crewneck.png';
+import blue_dress from './assets/Dress blue long.png';
+
 import pink_bob from './assets/Pink bob.png';
+import red_bob from './assets/Hair red bob.png';
+import bucket_hat from './assets/Bucket hat.png';
+import pink_hat from './assets/Pink hat.png';
+
+
 import orange_pants from './assets/Orange-pants.png';
 import pigtails from './assets/Pigtails.png';
 import placeholder from './assets/Placeholder.png';
@@ -17,6 +28,7 @@ import mjs from './assets/Pink Mjs.png';
 import blue_shoes from './assets/Blue shoes.png';
 import ballet_shoes from './assets/Ballet shoes.png';
 import keens from './assets/Boots keen.png';
+import leopard_sandals from './assets/Shoes sandals leopard.png';
 import bratz_sandals from './assets/Shoes bratz sandal.png';
 
 import plain_socks from './assets/Plain socks.png';
@@ -26,8 +38,14 @@ import baggy_jeans from './assets/Baggy jeans.png';
 import white_skirt from './assets/White long skirt.png';
 import jean_skirt from './assets/Skirt jean.png';
 import jorts from './assets/Jorts.png';
+import beige_skirt from './assets/Beige pleated skirt.png';
 
 import corduroy_jacket from './assets/Corduroy coat.png';
+import pink_cardigan from './assets/Layer Pink cardigan.png';
+import yellow_cardigan from './assets/Layer yellow cardigan.png';
+import black_buttonup from './assets/Layer black cord.png';
+import green_cardigan from './assets/Layer green cardigan.png';
+
 import Button_Bottoms from './assets/Button bottoms.png';
 import Button_Tops from './assets/Button tops.png';
 import Button_Hair from './assets/Button hair.png';
@@ -40,11 +58,11 @@ import ClothingType from './Components/clothing-type';
 import { CLOTHING_TYPES, ClothingTypes, ClothingTypesMap } from './constants';
 
 //CONSTANTS
-const shirts = [placeholder, pink_button_shirt, graphic_pink_tee, fairy_sleeves, white_tee, black_tee, brown_tank, frilly_blouse];
-const layers = [placeholder, corduroy_jacket];
-const hairs = [pigtails, pink_bob, ponytail];
-const bottoms = [placeholder, orange_pants, white_skirt, baggy_jeans, jean_skirt, jorts];
-const shoes = [placeholder, mjs, blue_shoes, trainers, keens, bratz_sandals, ballet_shoes];
+const shirts = [placeholder, pink_button_shirt, graphic_pink_tee, fairy_sleeves, white_tee, black_tee, brown_tank, frilly_blouse, t_shirt_dress, pink_tank_top, blue_tank_top, blue_dress];
+const layers = [placeholder, corduroy_jacket, yellow_cardigan, pink_cardigan, uw_crewneck, black_buttonup, green_cardigan];
+const hairs = [pigtails, pink_bob, ponytail, red_bob, bucket_hat, pink_hat];
+const bottoms = [placeholder, orange_pants, white_skirt, baggy_jeans, jean_skirt, jorts, beige_skirt];
+const shoes = [placeholder, mjs, blue_shoes, trainers, keens, leopard_sandals, bratz_sandals, ballet_shoes];
 const socks = [placeholder, plain_socks, black_socks];
 function getImage(item: string) {
   switch (item) {
