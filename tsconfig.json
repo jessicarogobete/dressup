@@ -10,6 +10,19 @@
   ],
   "compilerOptions": {
     "jsx": "react-jsx",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "isolatedModules": true,
+    "target": "ESNext",
     "esModuleInterop": true
-  }
+  },
+  "include": [
+    "src/vite-env.d.ts",
+    "src/**/*"
+  ],
+  "typeRoots": [
+    "../node_modules/@types",
+    "./node_modules/@types",
+    "../node_modules/@testing-library"
+  ]
 }

@@ -1,25 +1,26 @@
 import App from "./App";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { ClothingTypes } from "./constants";
+import { expect, test } from 'vitest';
 
 beforeAll(() => {
     render(App());
 });
 
-it('Renders title text', () => {
+test('Renders ttestle text', () => {
     const h2Text = screen.getByText('Dress up party girl!');
-    expect(h2Text).toBeInTheDocument();
+    expect(h2Text).toBeDefined();
 });
 
-it('renders image of each clothing type button', () => {
+test('renders image of each clothing type button', () => {
     ClothingTypes.forEach((type) => {
-        expect(screen.getByTestId(type)).toBeInTheDocument();
+        expect(screen.getByTestId(type)).toBeDefined();
     })
 })
 
-it('updates state to select clothing type when clothing button is clicked', () => {
+test('updates state to select clothing type when clothing button is clicked', () => {
     const topsButton = screen.getByTestId("tops");
-    expect(topsButton).toBeInTheDocument();
+    expect(topsButton).toBeDefined();
     fireEvent.click(topsButton);
-    expect(topsButton).not.toBeInTheDocument();
+    expect(topsButton).toBeUndefined();
 });
